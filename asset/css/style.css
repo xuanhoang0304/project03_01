@@ -25,7 +25,6 @@ body {
     width: 1140px;
     max-width: calc(100% - 48px);
     margin: 0 auto;
-    position: relative;
 }
 
 a {
@@ -84,34 +83,6 @@ a {
 /* Header */
 .header {
     padding-top: 28px;
-    height: 100vh;
-}
-.avstract-top {
-    position: absolute;
-    top: 106px;
-    left: 254px;
-    z-index: 2;
-}
-
-.vector-top {
-    position: absolute;
-    top: 91px;
-    left: 292px;
-    z-index: 1;
-}
-
-.vector-bottom {
-    position: absolute;
-    top: 397px;
-    left: 500px;
-    z-index: 1;
-}
-
-.avstract-bottom {
-    position: absolute;
-    right: 34px;
-    top: 632px;
-    z-index: 2;
 }
 
 .header__top {
@@ -175,10 +146,38 @@ a {
     padding: 60px 0 88px 0;
 }
 
+.avstract-top {
+    position: absolute;
+    top: -25px;
+    left: 254.61px;
+    z-index: 2;
+}
+.avstract-bottom {
+    position: absolute;
+    right: 34px;
+    top: 501px;
+    z-index: 2;
+}
+
+.vector-top {
+    position: absolute;
+    top: -32.07px;
+    left: 297px;
+    z-index: 1;
+}
+
+.vector-bottom {
+    position: absolute;
+    bottom: -72px;
+    right: 70px;
+    z-index: 1;
+}
+
 .hero__inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 }
 
 .hero__content {
@@ -294,4 +293,28 @@ a {
     background: #4dbb9a;
     filter: blur(137px);
     z-index: -1;
+}
+/* Brand */
+.brand {
+    margin-top: 100px;
+}
+
+.brand__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #e2eddf;
+    border-radius: 999px;
+    padding: 85px 100px 85px 122px;
+}
+.brand-agworld{
+    display: flex;
+    align-items: center;
+    column-gap: 11px;
+}
+
+.brand-agworld__text {
+    color: #163c35;
+    font-size: 2.6rem;
+    font-weight: 400;
 }
