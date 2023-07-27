@@ -62,6 +62,13 @@ a {
     line-height: 52px; /* 123.81% */
 }
 
+.section__subheading {
+    color: #152427;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1; /* 100% */
+}
+
 .section__desc {
     color: var(--text-color-light-gray, #7d8188);
     font-weight: 500;
@@ -307,7 +314,7 @@ a {
     border-radius: 999px;
     padding: 85px 100px 85px 122px;
 }
-.brand-agworld{
+.brand-agworld {
     display: flex;
     align-items: center;
     column-gap: 11px;
@@ -317,4 +324,118 @@ a {
     color: #163c35;
     font-size: 2.6rem;
     font-weight: 400;
+}
+/* Service */
+.service {
+    padding: 56px 0;
+    margin-top: 50px;
+}
+.service__title {
+    display: inline-block;
+    position: relative;
+    margin-left: 46px;
+}
+
+.service__title::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: calc(50% - 3px);
+    left: -46px;
+    background: #152427;
+    width: 25px;
+    height: 1px;
+}
+
+.service-top {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.service-top__heading {
+    position: relative;
+    max-width: 520px;
+}
+
+.service-top__heading::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    bottom: 19px;
+    right: 103px;
+    width: 66px;
+    height: 2px;
+    background: #152427;
+}
+
+.control {
+    margin: 0 73px 0 auto;
+    display: flex;
+    align-items: center;
+    column-gap: 17px;
+}
+
+.control__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #152427;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    background: #e2eddf;
+    transition: 0.3s;
+}
+
+.control__item:hover {
+    background: #143c3c;
+    color: #fff;
+}
+
+.service__list {
+    margin-top: 76px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 16px;
+}
+.service-item {
+    border-radius: 20px 20px 0px 0px;
+    overflow: hidden;
+}
+
+.service-item:hover {
+    border-radius: 20px;
+    box-shadow: -6px 9px 64px -4px rgba(118, 118, 118, 0.25);
+}
+
+.service-item:hover .service-item__img {
+    transform: scale(1.1);
+}
+
+.service-item:hover .service-item__body {
+    padding: 24px 18px;
+    background: #fff;
+}
+
+.service-item__images {
+    overflow: hidden;
+}
+
+.service-item__img {
+    display: flex;
+    width: 370px;
+    height: 318px;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.service-item__body {
+    padding-top: 24px;
+    background: transparent;
+}
+
+.service-item__desc {
+    margin-top: 18px;
+    max-width: 268px;
 }
