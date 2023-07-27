@@ -477,7 +477,7 @@ a {
 }
 
 .about__content {
-    width: 43.9%;
+    width: 42.5%;
 }
 
 .about__heading {
@@ -578,7 +578,7 @@ a {
     margin-left: -6px;
 }
 
-.about-card-list__item:first-child{
+.about-card-list__item:first-child {
     margin-left: 0;
 }
 
@@ -588,4 +588,107 @@ a {
     height: 16px;
     object-fit: cover;
     border-radius: 50%;
+}
+/* Process */
+.process {
+    margin-top: 29px;
+}
+
+.process__image {
+    position: absolute;
+    bottom: 0;
+    right: 92px;
+}
+
+.process__img {
+    width: 450px;
+    height: 444px;
+    object-fit: cover;
+}
+
+.process-top {
+    padding-top: 36px;
+}
+
+.process__heading {
+    margin-top: 20px;
+    max-width: 477px;
+    position: relative;
+}
+
+.process__heading::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    bottom: 19px;
+    right: -9px;
+    width: 66px;
+    height: 2px;
+    background: #152427;
+}
+
+.process__list {
+    margin-top: 81px;
+}
+
+.process__row {
+    padding: 57px 0 54px 0;
+    position: relative;
+}
+
+.process__row:hover .process__link {
+    opacity: 1;
+}
+
+.process__row:hover .process-item__hr {
+    display: none;
+}
+
+.process__row:hover {
+    background: #e2eddf;
+    border-radius: 33px;
+}
+
+.process-item {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    min-height: 84px;
+}
+
+.process__link {
+    opacity: 0;
+    margin-left: 189px;
+    position: relative;
+    top: -17px;
+    color: var(--text-color-black-gray, #575d5e);
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1; /* 100% */
+    text-decoration: underline;
+}
+
+.process-item__stepnumber {
+    min-width: 107px;
+    margin-right: 49px;
+    color: var(--primary-color-black-green, #143c3c);
+    font-size: 72px;
+    font-weight: 600;
+    line-height: 0.72; /* 72.222% */
+}
+.process-item__desc {
+    max-width: 572px;
+    margin-left: auto;
+}
+
+.process-item__hr {
+    position: absolute;
+    bottom: 0;
+    width: calc(100% - 9px);
+    height: 3px;
+    background: linear-gradient(
+        180deg,
+        #83a17d 4.17%,
+        rgba(131, 161, 125, 0) 36.46%
+    );
 }
