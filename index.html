@@ -104,18 +104,18 @@
                     <nav class="nav">
                         <ul class="nav__list">
                             <li>
-                                <a href="#!" class="nav__link nav__link--active"
+                                <a href="#" class="nav__link nav__link--active"
                                     >Home
                                 </a>
                             </li>
                             <li>
-                                <a href="#!" class="nav__link">About</a>
+                                <a href="#about" class="nav__link">About</a>
                             </li>
                             <li>
-                                <a href="#!" class="nav__link">Blog</a>
+                                <a href="#blog" class="nav__link">Blog</a>
                             </li>
                             <li>
-                                <a href="#!" class="nav__link">Contact</a>
+                                <a href="#footer" class="nav__link">Contact</a>
                             </li>
                         </ul>
                     </nav>
@@ -351,7 +351,7 @@
                 </div>
             </section>
             <!-- About -->
-            <section class="about">
+            <section id="about" class="about">
                 <div class="container">
                     <section class="about__inner">
                         <div class="about__media">
@@ -647,8 +647,166 @@
                     </div>
                 </div>
             </section>
+            <!-- Contact Form -->
+            <section class="contact">
+                <div class="container">
+                    <h2 class="contact__heading section__heading">Contact</h2>
+                    <form
+                        action="https://api-gateway.fullstack.edu.vn/action_page.php"
+                        class="form"
+                        autocomplete="off"
+                        target="_blank"
+                    >
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="label" for="first-name"
+                                    >First Name</label
+                                >
+                                <input
+                                    type="text"
+                                    class="form-input"
+                                    name="first-name"
+                                    id="first-name"
+                                    placeholder="Enter frist name"
+                                    minlength="2"
+                                    required
+                                />
+                                <p class="form-error">
+                                    Tên phải lớn hơn 2 ký tự
+                                </p>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="label" for="last-name"
+                                    >Last Name</label
+                                >
+                                <input
+                                    type="text"
+                                    class="form-input"
+                                    name="last-name"
+                                    id="last-name"
+                                    placeholder="Enter last name"
+                                    minlength="2"
+                                    required
+                                />
+                                <p class="form-error">
+                                    Tên phải lớn hơn 2 ký tự
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="label" for="email">Mail</label>
+                                <input
+                                    type="email"
+                                    class="form-input"
+                                    name="email"
+                                    id="email"
+                                    placeholder="Enter email"
+                                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                                    required
+                                />
+                                <p class="form-error">
+                                    Vui lòng nhập đúng email
+                                </p>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="label" for="phone">Phone</label>
+                                <input
+                                    type="tel"
+                                    class="form-input"
+                                    name="phone"
+                                    id="phone"
+                                    placeholder="Enter phone"
+                                    pattern="^(0|\+?84)(3|5|7|8|9)[0-9]{8}$"
+                                    required
+                                />
+                                <p class="form-error">
+                                    Số điện thoại không hợp lệ
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="label large"
+                                    >What the of website do you need?</label
+                                >
+                                <div class="radio-group">
+                                    <div class="radio-btn">
+                                        <input
+                                            type="radio"
+                                            name="type"
+                                            value="web-design"
+                                            id="web-design"
+                                            checked
+                                        />
+                                        <label for="web-design"
+                                            >Web Design</label
+                                        >
+                                    </div>
+
+                                    <div class="radio-btn">
+                                        <input
+                                            type="radio"
+                                            name="type"
+                                            value="web-development"
+                                            id="web-development"
+                                        />
+                                        <label for="web-development"
+                                            >Web Development</label
+                                        >
+                                    </div>
+
+                                    <div class="radio-btn">
+                                        <input
+                                            type="radio"
+                                            name="type"
+                                            value="logo-design"
+                                            id="logo-design"
+                                        />
+                                        <label for="logo-design"
+                                            >Logo Design</label
+                                        >
+                                    </div>
+
+                                    <div class="radio-btn">
+                                        <input
+                                            type="radio"
+                                            name="type"
+                                            value="orther"
+                                            id="orther"
+                                        />
+                                        <label for="orther">Other</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="message" class="label"
+                                    >Message</label
+                                >
+                                <textarea
+                                    name="message"
+                                    id="message"
+                                    class="form__texare"
+                                    placeholder="Write your message.."
+                                ></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <button class="form-btn">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
             <!-- Blog-->
-            <section class="blog">
+            <section id="blog" class="blog">
                 <div class="container">
                     <p class="section__title">BLOG & ARTICLES</p>
                     <section class="blog__header">
@@ -748,7 +906,7 @@
                 </div>
             </section>
         </main>
-        <footer class="footer">
+        <footer id="footer" class="footer">
             <div class="container">
                 <section class="footer__inner">
                     <section class="footer-signup">
@@ -907,7 +1065,9 @@
                 </section>
                 <div class="footer__hr"></div>
                 <div class="copyright">
-                    <p class="copyright__text">2021 GDN. Copyright and All rights reserved.</p>
+                    <p class="copyright__text">
+                        2021 GDN. Copyright and All rights reserved.
+                    </p>
                 </div>
             </div>
         </footer>
